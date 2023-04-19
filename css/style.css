@@ -30,6 +30,7 @@ header {
 .title {
     margin-right: auto;
 }
+
 .menu-item {
     font-size: 21px;
     /* list-style: none;は中黒がなくなる */
@@ -39,27 +40,44 @@ header {
     margin: 50px 50px 50px 0px;
 }
 
-.headimage__image {
+a {
+    text-decoration:none; 
+    color: #222;
+}
+
+.headimage__image__headcopy{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.headimage__image__1 {
     max-width: 100%;
     height: 500px;
-    background-image: url("../img/mainbg.png");
     background-position: center;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-.headimage__image h1 {
+
+.headimage__image__headcopy h1 {
     color: #eee;
     font-size: 70px;
     font-weight: bold;
     margin-bottom: 30px;
+    position: ab;
 }
-.headimage__image p {
+.headimage__image__headcopy p {
     color: #eee;
     font-size: 20px;
     font-weight: lighter;
 }
+
 .index h1 {
     color: orangered;
     font-family: Arial;
@@ -98,6 +116,7 @@ header {
 .field {
     display: flex;
     max-width: 100%;
+    margin-bottom: 20px;
 }
 .course__index h1 {
     color: #222;
@@ -169,8 +188,11 @@ header {
     margin: 0 auto;
 }
 
+.slider {
+    padding: 0 40px 0 40px;
+}
+
 .news-card {
-    width: 300px;
     height: 370px;
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
